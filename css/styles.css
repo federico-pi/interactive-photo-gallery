@@ -8,13 +8,9 @@ body {
 }
 
 main {
-  width: 80%;
+  max-width: 1024px;
   margin: auto;
   margin-bottom: 25px;
-}
-
-img {
-  width: 250px;
 }
 
 .search {
@@ -23,17 +19,16 @@ img {
 }
 
 #search {
-  width: 600px;
+  width: 50%;
   height: 50px;
   padding: 20px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0px 70px;
 }
 
 /*# sourceMappingURL=styles.css.map */
